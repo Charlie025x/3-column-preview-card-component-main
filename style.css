@@ -21,6 +21,7 @@ body {
 
 .card-1 {
     background-color:hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0px 0px;
 }
 
 .card-2 {
@@ -29,6 +30,7 @@ body {
 
 .card-3 {
     background-color:hsl(179, 100%, 13%);
+    border-radius: 0px 0px 10px 10px;
 }
 
 .card-title {
@@ -74,6 +76,31 @@ body {
     color:hsl(179, 100%, 13%)
   }
   
+  /* medium screen styles */
+  @media only screen and (min-width: 768px) {
+
+    .container {
+        margin: 10vh 0%;
+        padding: 0px;
+        flex-direction: row;
+    }
+
+    .card-1 {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .card-3 {
+        border-radius: 0px 10px 10px 0px;
+    }
+  }
+
+  /* large screen styles */
+  @media only screen and (min-width: 992px) {
+
+    .container {
+        margin: 15vh 15vw;
+    }
+  }
 
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
